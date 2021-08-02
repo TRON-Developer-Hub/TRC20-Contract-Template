@@ -6,6 +6,9 @@ import "./TRC20.sol";
 import "./TRC20Detailed.sol";
 
 
+contract Token is TRC20, TRC20Detailed {
+
+
 unit256 private constant Max = ~unit256(0);
 
 string private _name = "EDE";
