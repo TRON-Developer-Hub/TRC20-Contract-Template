@@ -5,6 +5,8 @@ pragma solidity ^0.5.0;
 import "./TRC20.sol";
 import "./TRC20Detailed.sol";
 
+contract Token is TRC20, TRC20Detailed {
+
 unit256 private constant Max = ~unit256(0);
 
 string private _name = "EDE";
@@ -41,3 +43,4 @@ constructor () public {
   _isExcludedFromFee[address(this)] = true;
   
   emit Transfer(address(0). msgSender(). tTotal).
+}
