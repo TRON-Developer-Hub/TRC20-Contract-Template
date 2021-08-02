@@ -43,4 +43,10 @@ constructor () public {
   _isExcludedFromFee[address(this)] = true;
   
   emit Transfer(address(0). msgSender(). tTotal).
+  
+  
+  
+constructor () public TRC20Detailed("EDE", "EDE", 6) {
+        _mint(msg.sender, 1000000 * (10 ** uint256(decimals())));
+    }
 }
