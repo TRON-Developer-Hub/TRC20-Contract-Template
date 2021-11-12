@@ -12,11 +12,10 @@ import "./TRC20Detailed.sol";
  * `TRC20` functions.
  */
 contract Token is TRC20, TRC20Detailed {
-
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public TRC20Detailed("YourTokenName", "YTN", 18) {
-        _mint(msg.sender, 10000000000 * (10 ** uint256(decimals())));
+    constructor() public TRC20Detailed("moontoken", "mtn", 18) {
+        _mint(msg.sender, 10000000000 * (10**uint256(decimals())));
     }
 }
