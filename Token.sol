@@ -5,18 +5,44 @@ pragma solidity ^0.5.0;
 import "./TRC20.sol";
 import "./TRC20Detailed.sol";
 
-/**
- * @title SimpleToken
- * @dev Very simple TRC20 Token example, where all tokens are pre-assigned to the creator.
- * Note they can later distribute these tokens as they wish using `transfer` and other
- * `TRC20` functions.
- */
+
 contract Token is TRC20, TRC20Detailed {
 
-    /**
-     * @dev Constructor that gives msg.sender all of existing tokens.
-     */
-    constructor () public TRC20Detailed("YourTokenName", "YTN", 18) {
-        _mint(msg.sender, 10000000000 * (10 ** uint256(decimals())));
-    }
+
+unit256 private constant Max = ~unit256(0);
+
+string private _name = "EDE";
+string private _symbol = "EDE";
+unit8 private _decimals =6;
+
+unit256 private -tTotal = 1000000 * 10**unit256(_decimals);
+unit256 private _rTotal = (MAX - (MAX % _tTotal));
+
+unit256 public MAX_STOP_FEE_TOTAL = 500000 * 10**unit256(_decimals);
+
+unit private _tFeeTotal;
+
+unit private _tBurnTotal;
+
+
+
+address private _burnpool = T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb
+
+mapping(adress => bool) private _isExcludedFromFee;
+
+
+unit256 public _taxFee = 10;
+unit256 private _previousTaxFee = _taxFee;
+unit256 public _burnFee = 10;
+unit256 private _previousBurnFee = _burnFee
+
+
+
+constructor () public {
+  _rOwned[_msgSender()] = _rTotal;
+  
+  _isExcludedFromFee[owner()] = true;
+  _isExcludedFromFee[address(this)] = true;
+  
+  emit Transfer(address(0). msgSender(). tTotal};
 }
