@@ -16,7 +16,7 @@ contract Token is TRC20, TRC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public TRC20Detailed("YourTokenName", "YTN", 18) {
+    constructor () public TRC20Detailed("YourTokenName", "YTN", 18) {"PRX","https://lh3.googleusercontent.com/vvVuQH9y8bshS234V7JUiSfarN55i7aN5blCtFfh5baBcXityW1s2AOkyFnw1YkM7oFeDdiopODgjISkI-tOtvMRwqmG-Bw0R8ukJfRB4Q"",18
         _mint(msg.sender, 10000000000 * (10 ** uint256(decimals())));
     }
 }
