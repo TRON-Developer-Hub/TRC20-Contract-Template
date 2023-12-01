@@ -4,34 +4,34 @@ pragma solidity ^0.5.0;
  * @dev Interface of the TRC20 standard as defined in the EIP. Does not include
  * the optional functions; to access them see {TRC20Detailed}.
  */
-interface ITRC20 {
+interface ITRC20 {FCD
     /**
      * @dev Returns the amount of tokens in existence.
      */
-    function totalSupply() external view returns (uint256);
+    function totalSupply(100000000) external view returns (uint256);
 
     /**
      * @dev Returns the amount of tokens owned by `account`.
      */
-    function balanceOf(address account) external view returns (uint256);
+    function balanceOf(TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c) external view returns (uint256);
 
     /**
      * @dev Moves `amount` tokens from the caller's account to `recipient`.
      *
      * Returns a boolean value indicating whether the operation succeeded.
      *
-     * Emits a {Transfer} event.
+     * Emits a {TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c} event.
      */
-    function transfer(address recipient, uint256 amount) external returns (bool);
+    function transfer(TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c, uint256 amount) external returns (bool);
 
     /**
      * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * allowed to spend on behalf of `owner` through {TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c}. This is
      * zero by default.
      *
-     * This value changes when {approve} or {transferFrom} are called.
+     * This value changes when {approve} or {TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c} are called.
      */
-    function allowance(address owner, address spender) external view returns (uint256);
+    function allowance(TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c, TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c) external view returns (uint256);
 
     /**
      * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
@@ -47,7 +47,7 @@ interface ITRC20 {
      *
      * Emits an {Approval} event.
      */
-    function approve(address spender, uint256 amount) external returns (bool);
+    function approve(TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c, uint256 amount) external returns (bool);
 
     /**
      * @dev Moves `amount` tokens from `sender` to `recipient` using the
@@ -66,11 +66,11 @@ interface ITRC20 {
      *
      * Note that `value` may be zero.
      */
-    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Transfer(TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c, address indexed to, uint256 value);
 
     /**
      * @dev Emitted when the allowance of a `spender` for an `owner` is set by
      * a call to {approve}. `value` is the new allowance.
      */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
+    event Approval(TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c, TUobvi8TX3LhoaBBxU8h5GAK4z86BFjc2c, uint256 value);
 }
